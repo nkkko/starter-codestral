@@ -1,0 +1,21 @@
+{
+    "name": "Hugging Face Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/nkkko/features/huggingface:1": {
+            "version": "latest",
+            "cuda": false
+        }
+    },
+    #"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
